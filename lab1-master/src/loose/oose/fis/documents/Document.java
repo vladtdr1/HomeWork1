@@ -1,10 +1,10 @@
 package loose.oose.fis.documents;
 
 public abstract class Document {
-    protected String[] continut;
+    protected String[] conti;
 
     public Document(String[] continut) {
-        this.continut = continut;
+        this.conti = continut;
     }
 
     public abstract String[] analizeaza();
@@ -12,7 +12,7 @@ public abstract class Document {
     @Override
     public String toString() {
         String res = "";
-        for (String cuvant : continut) {
+        for (String cuvant : conti) {
             res += cuvant + " ";
         }
         return res;
